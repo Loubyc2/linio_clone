@@ -1,0 +1,196 @@
+.header {
+    display              : grid;
+    grid-template-columns: .5fr 1fr 4fr .5fr;
+    align-items          : center;
+    background-color     : #4c4c4c;
+    padding              : .5rem .4rem;
+    position             : relative;
+}
+
+.header__menu {
+    font-size      : 1.8rem;
+    display        : flex;
+    justify-content: center;
+    color          : #fff !important;
+}
+
+.header__logo {
+    display        : flex;
+    justify-content: center;
+}
+
+.header__logo img {
+    max-width: 100%;
+    height   : auto;
+    width    : 50px;
+}
+
+.header__search {
+    display         : flex;
+    justify-content : space-between;
+    padding         : 1.2rem .5rem;
+    align-items     : center;
+    background-color: whitesmoke;
+    height          : 30px;
+    width           : 100%;
+    border-radius   : 4px;
+    color           : #aaa;
+}
+
+.header__search input {
+    background-color: transparent;
+    border          : none;
+}
+
+.header__search svg {
+    font-size: 1.2rem;
+
+}
+
+.header__search input::placeholder {
+    font-size: .9rem;
+}
+
+.header__cart {
+    display        : flex;
+    justify-content: center;
+}
+
+.header__cart svg {
+    font-size: 1.4rem;
+}
+
+.header__cart path {
+    stroke: #fff;
+}
+
+/* header menu */
+
+.header__menu {
+    display: flex;
+}
+
+.modal-dialog {
+    background-color: #FFF;
+    position        : absolute;
+    top             : -1px;
+    left            : -100vw;
+    margin          : 0;
+    transition      : all .5s;
+    border-radius   : 0;
+}
+
+.modal-header {
+    background-color: #eee;
+    display         : flex;
+    justify-content : space-between;
+    width           : 100%;
+    border-radius   : 0;
+    margin          : 0;
+}
+
+.modal-content {
+    width : 90vw;
+    height: 120vh;
+    color : #222;
+}
+
+.showMenu {
+    left      : -1px;
+    transition: all .5s;
+
+}
+
+.modal-header .btn-outline-danger {
+    border-color: #ff4c4c;
+    color       : #ff4c4c;
+}
+
+.modal-header .btn-outline-danger:hover {
+    background-color: #ff4c4c;
+    color           : #fff;
+}
+
+.modal-header .btn-danger {
+    background-color: #ff4c4c;
+    border-color    : #ff4c4c;
+}
+
+.wrapper-close-icon {
+    position        : fixed;
+    top             : 0;
+    right           : 1.05rem;
+    background-color: #4c4c4c;
+    opacity         : 1;
+    width           : 2.2rem;
+    height          : 5rem;
+    border-radius   : 0;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    text-align      : center;
+    z-index         : 2000;
+}
+
+.wrapper-close-icon {
+    font-size: 1.8rem;
+
+}
+
+.wrapper-close-icon path {
+    stroke: #fff !important;
+}
+
+.modal-body {
+    font-size     : 1rem;
+    display       : flex;
+    flex-direction: column;
+    padding       : 0;
+}
+
+.modal-body a {
+    color: #666 !important;
+}
+
+.modal-body a:hover {
+    color: #ff4c4c !important;
+}
+
+.modal-body svg {
+    font-size: 1.5rem;
+    margin   : 0 .8rem;
+    color    : #ff4c4c;
+}
+
+.modal-body-section_1,
+.modal-body-section_2 {
+    padding      : 1.2rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-body-section_1 a,
+.modal-body-section_2 a {
+    display: flex;
+}
+
+.modal-body-section_3 {
+    padding: 1rem 3rem;
+}
+
+.modal-body-section_3 a p {
+    margin-bottom: 1.2rem;
+}
+
+.modal-body-section_4 {
+    background-color: #333;
+    padding         : .8rem 1rem;
+    width           : 100%;
+}
+
+.modal-body-section_4 a h2 {
+    color         : #fff !important;
+    text-transform: uppercase;
+    font-size     : 1rem !important;
+    width         : 80%;
+    line-height   : 1.4;
+}

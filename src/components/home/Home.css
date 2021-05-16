@@ -1,0 +1,71 @@
+.home {
+    padding         : 0 .5rem;
+    background-color: #f9f9f9;
+}
+
+.home__banner-top img {
+    max-width : 100%;
+    height    : 100px;
+    object-fit: cover;
+}
+
+/* home carousel */
+.home__carousel {
+    margin: 1rem 0;
+}
+
+.carousel-item img {
+    max-width : 100%;
+    height    : 250px;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    padding-bottom: 1rem;
+}
+
+.carousel-indicators button {
+    background-color: #bbb !important;
+    width           : 12px !important;
+    height          : 12px !important;
+    border-radius   : 50%;
+}
+
+.carousel-indicators button.active {
+    background-color: #333 !important;
+
+}
+
+/* home categories */
+
+
+.home__categories .carousel-item img {
+    max-width: 100%;
+    height   : auto;
+    width    : 210px;
+}
+
+.home__categories .carousel-item {
+    text-align: center;
+
+}
+
+.home__categories .carousel-item>div {
+    display: inline;
+    width  : 100%;
+    margin : 0 .5rem;
+}
+
+/* home banner 1 */
+.home__limitedProducts h1 {
+    font-size: 1.4rem;
+    margin   : 15px 0;
+}
+
+.home__limitedProducts-background {
+    background-image   : url("https://dynamic-yield.linio.com//api/scripts/8767679/images/381d648074d17__CIN_LP_LATAM_SOLOHOY.jpg");
+    height             : 120px;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+}
