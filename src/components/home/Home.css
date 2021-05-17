@@ -56,7 +56,8 @@
     margin : 0 .5rem;
 }
 
-/* home banner 1 */
+/* home limitedProducts */
+
 .home__limitedProducts h1 {
     font-size: 1.4rem;
     margin   : 15px 0;
@@ -68,4 +69,142 @@
     background-repeat  : no-repeat;
     background-size    : cover;
     background-position: center;
+}
+
+/* home collections */
+.home__collections h1 {
+    font-size     : 1.4rem;
+    margin        : 15px 0;
+    text-transform: uppercase;
+}
+
+.home__collections__banner_1 {
+    background-image   : url("https://i.linio.com/cms/a83ec48a-b34c-11eb-b727-06372216eefd.webp");
+    height             : 200px;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+    margin-bottom      : 10px;
+}
+
+/* home colletions categories */
+.home__colletions-categories_1 {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 10px;
+    margin               : 10px 0;
+}
+
+.home__colletions-category_1 {
+    background-image   : url("https://i.linio.com/cms/9f3c5c18-afa4-11eb-8be5-ee2255d3cf9f.webp");
+    height             : 200px;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+}
+
+.home__colletions-category_2 {
+    background-image   : url("https://i.linio.com/cms/2c6d228c-b1b4-11eb-a1cf-06372216eefd.webp");
+    height             : 200px;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+}
+
+.home__colletions-category_3 {
+    background-image   : url("https://i.linio.com/cms/a18f3d00-afa4-11eb-98df-06372216eefd.webp");
+    height             : 200px;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+}
+
+.home__colletions-category_4 {
+    background-image   : url("https://i.linio.com/cms/6676b882-afa5-11eb-8e49-06372216eefd.webp");
+    height             : 200px;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+}
+
+.home__collections__banner_2 {
+    background-image   : url("https://i.linio.com/cms/c5b763a0-b34c-11eb-8339-ee2255d3cf9f.webp");
+    height             : 200px;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+    margin-bottom      : 10px;
+}
+
+.home__collections__banner_3 {
+    background-image   : url("https://i.linio.com/cms/0eea1144-b34d-11eb-a17b-ee2255d3cf9f.webp");
+    height             : 200px;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+    margin             : 30px 0 10px;
+}
+
+.home__colletions-categories_2 {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 10px;
+    margin               : 10px 0;
+}
+
+.home__colletions-categories_1 .home__colletions-category_1 {
+    background-image   : url("https://i.linio.com/cms/1b657bb6-afa6-11eb-8209-ee2255d3cf9f.webp");
+    height             : 200px;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+}
+
+.home__colletions-categories_1 .home__colletions-category_2 {
+    background-image   : url("https://i.linio.com/cms/1a5020c8-afa6-11eb-ad29-ee2255d3cf9f.webp");
+    height             : 200px;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+}
+
+/* Home best products */
+.home__bestProducts {
+    display   : flex;
+    width     : 100%;
+    overflow-x: scroll;
+}
+
+.bestProducts {
+    width           : 230px;
+    background-color: #fff;
+    border          : 1px solid #ddd;
+
+
+}
+
+.bestProducts:not(:nth-of-type(7)) {
+    margin-right: 12px;
+}
+
+.bestProducts-img {
+    max-width: 100%;
+    height   : auto;
+    width    : 100%;
+}
+
+
+.bestProducts-text-title {
+    font-size: 1.2rem;
+}
+
+.bestProducts-text-price {
+    color      : rgb(236, 52, 52);
+    font-size  : 1.2rem;
+    font-weight: bold;
+}
+
+.bestProducts-text-no_price {
+    color          : #aaa;
+    text-decoration: line-through;
 }

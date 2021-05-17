@@ -2,7 +2,18 @@ import React from 'react'
 
 import "./Home.css"
 
-
+const BestProdust = ({ img, title, no_price, price, discount }) => {
+    return (
+        <div className="bestProducts">
+            <img className="bestProducts-img" src={img} alt="" />
+            <div className="bestProducts-text px-1 mt-4">
+                <h2 className="bestProducts-text-title">{title}</h2>
+                {no_price && <p><span className="bestProducts-text-no_price"> {no_price}</span> <span>{discount} </span></p>}
+                <p className="bestProducts-text-price">{price}</p>
+            </div>
+        </div>
+    )
+}
 function Home() {
     return (
         <div className="home">
@@ -73,6 +84,75 @@ function Home() {
             <div className="home__limitedProducts">
                 <h1>PRODUCTOS LINTERNACIONALES POR TIEMPO LIMITADO</h1>
                 <div className="home__limitedProducts-background"></div>
+            </div>
+            <div className="home__collections">
+                <h1>colecciones</h1>
+                <div className="home__collections__banner_1"></div>
+                <div className="home__colletions-categories_1">
+                    <div className="home__colletions-category_1"></div>
+                    <div className="home__colletions-category_2"></div>
+                    <div className="home__colletions-category_3"></div>
+                    <div className="home__colletions-category_4"></div>
+                </div>
+                <div className="home__collections__banner_2"></div>
+                <div className="home__collections__banner_3"></div>
+                <div className="home__colletions-categories_1">
+                    <div className="home__colletions-category_1"></div>
+                    <div className="home__colletions-category_2"></div>
+                </div>
+            </div>
+            <div className="home__bestProducts">
+                <div className="d-flex">
+                    <BestProdust
+                        img="https://i.linio.com/p/e24156183300f855c4fa37a0821f59e6-card.webp"
+                        title="Cortina Roller Duo Día Noche - Blanco"
+                        no_price="19.990"
+                        price="14.990"
+                        discount="25%"
+                    />
+                    <BestProdust
+                        img="https://i.linio.com/p/1dadbc08433aaefa9f2c2481fa733fd6-card.webp"
+                        title="Audifonos inalámbricos Xiaomi"
+                        no_price="29.990"
+                        price="17.990"
+                        discount="-40%"
+                    />
+                    <BestProdust
+                        img="https://i.linio.com/p/c4ef9a4c4ccf0e739efab63965baf680-card.webp"
+                        title="Toma Presion digital Brazo con"
+                        no_price="29.990"
+                        price="11.990"
+                        discount="-60%"
+                    />
+                    <BestProdust
+                        img="https://i.linio.com/p/4a9501a1f0889eae3d20a0945248bbf4-card.webp"
+                        title="Notebook 14-Cf2051La Intel Core i3-10110U"
+                        no_price="459.990"
+                        price="439.990"
+                        discount="-4%"
+                    />
+                    <BestProdust
+                        img="https://i.linio.com/p/30810ba526a60cd3f75d12c068c29f37-card.webp"
+                        title="Tommy Girl Tommy Hilfiger Eau de Toilette"
+                        no_price="56.998"
+                        price="23.990"
+                        discount="-57%"
+                    />
+                    <BestProdust
+                        img="https://i.linio.com/p/192de0f177dd81f5a89da28fd0f9639c-card.webp"
+                        title="Smartphone Galaxy A51 128GB-Púrpura"
+                        no_price="329.990"
+                        price="209.990"
+                        discount="-36%"
+                    />
+                    <BestProdust
+                        img="https://i.linio.com/p/dd3d4704c07fce387f7cc6cd8d9c7534-card.webp"
+                        title="Cortina Roller Duo Día Noche - Blanco"
+                        no_price="19.990"
+                        price="14.990"
+                        discount="25%"
+                    />
+                </div>
             </div>
         </div>
     )
