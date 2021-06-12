@@ -20,24 +20,26 @@ function Header() {
 
     return (
         <div className="header ">
-            <Link
-                to="/"
-                className="header__menu"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-            >
-                <FiIcons.FiMenu onClick={handleMenu} />
-            </Link>
-            <Link to="/" className="header__logo">
-                <img src="https://assets.linio.com/assets/images/logos/logo-linio-sm-59514e9d4b.svg" alt="" />
-            </Link>
-            <div className="header__search">
-                <input type="text" placeholder="Buscar productos" />
-                <BiIcons.BiSearch />
-            </div>
-            <Link to="/" className="header__cart">
-                <GrIcons.GrCart />
-            </Link>
+            <nav className="header__nav">
+                <Link
+                    to="/"
+                    className="header__menu-icon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                >
+                    <FiIcons.FiMenu onClick={handleMenu} />
+                </Link>
+                <Link to="/" className="header__logo">
+                    <img src="https://assets.linio.com/assets/images/logos/logo-linio-sm-59514e9d4b.svg" alt="" />
+                </Link>
+                <div className="header__search">
+                    <input type="text" placeholder="Buscar productos" />
+                    <BiIcons.BiSearch />
+                </div>
+                <Link to="/" className="header__cart">
+                    <GrIcons.GrCart />
+                </Link>
+            </nav>
             <div className="header__menu">
                 <div
                     className="modal header__menu-content"

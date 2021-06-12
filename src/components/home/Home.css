@@ -179,8 +179,7 @@
     width           : 230px;
     background-color: #fff;
     border          : 1px solid #ddd;
-
-
+    padding         : 0.5rem;
 }
 
 .bestProducts:not(:nth-of-type(7)) {
@@ -207,4 +206,9 @@
 .bestProducts-text-no_price {
     color          : #aaa;
     text-decoration: line-through;
+}
+
+/* home banners */
+.home__banner_1 {
+    background-image: url("https: //dynamic-yield.linio.com//api/scripts/8767679/images/291d4a039d14d__CL_ON_BT1.jpg");
 }

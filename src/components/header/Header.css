@@ -1,13 +1,20 @@
 .header {
+    align-items: center;
+    position   : relative;
+}
+
+nav {
     display              : grid;
     grid-template-columns: .5fr 1fr 4fr .5fr;
     align-items          : center;
-    background-color     : #4c4c4c;
     padding              : .5rem .4rem;
-    position             : relative;
+    position             : fixed;
+    width                : 100%;
+    background-color     : #4c4c4c;
+    z-index              : 999;
 }
 
-.header__menu {
+.header__menu-icon {
     font-size      : 1.8rem;
     display        : flex;
     justify-content: center;
@@ -40,6 +47,8 @@
 .header__search input {
     background-color: transparent;
     border          : none;
+    flex            : 1;
+    outline         : none;
 }
 
 .header__search svg {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import "./Home.css"
 
@@ -15,8 +15,28 @@ const BestProdust = ({ img, title, no_price, price, discount }) => {
     )
 }
 function Home() {
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+        async function fechData() {
+            const products = await fetch("https://fakestoreapi.com/products").then(data => data.json())
+            setProducts(products)
+            console.log(products)
+            return products;
+        }
+        fechData();
+    }, [])
+
     return (
         <div className="home">
+            {
+                products.map(product => (
+                    <div>
+                        <img style={{ maxWidth: "100%", height: "auto" }} src={product.image} alt="" />
+                        <p>{product.id}</p>
+                    </div>
+                ))
+            }
             <div className="home__banner-top">
                 <img src="https://i.linio.com/cms/269544f6-b1dd-11eb-a37a-ee2255d3cf9f.webp" alt="banner-top-img" />
             </div>
@@ -153,6 +173,11 @@ function Home() {
                         discount="25%"
                     />
                 </div>
+            </div>
+            <div className="home__banners">
+                <div className="home__banner_1"></div>
+                <div className="home__banner_2"></div>
+                <div className="home__banner_3"></div>
             </div>
         </div>
     )
